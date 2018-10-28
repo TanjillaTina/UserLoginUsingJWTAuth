@@ -1,15 +1,19 @@
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
+var cookieParser = require('cookie-parser');
 var bodyParser=require('body-parser');
 var expressValidator=require('express-validator');
 var flash=require('connect-flash');
 var session=require('express-session');
-const passport = require('passport');
 var keys=require('./config/keys');
-var cookieParser = require('cookie-parser');
+
 var logger = require('morgan');
 const mongoose=require('mongoose');
+
+
+const passport = require('passport');
+
 
 //mongodb setup
 
